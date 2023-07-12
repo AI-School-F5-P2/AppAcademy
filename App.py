@@ -41,4 +41,4 @@ async def create_student(student: Student):
 async def first_api():
     query = "SELECT * FROM students"
     results = await database.fetch_all(query)
-    return {"message": "Hello World", "data": results}
+    return {"message": "All students", "data": results}
